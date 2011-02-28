@@ -1,0 +1,6 @@
+
+    <resources>
+        <string-array name="accountContextMenuItems">
+            <item>Delete</item>
+        </string-array>
+    </resources>

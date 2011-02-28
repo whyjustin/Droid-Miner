@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+        <ListView android:id="@+id/addressList" android:layout_height="wrap_content" android:layout_width="match_parent" style="@style/listViewStyle"></ListView>
+		<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/address" android:id="@+id/address"></EditText>
+		<CheckBox android:text="Save" android:id="@+id/saveAddress" android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+		<LinearLayout
+			android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    >
+			<Button android:text="Add Account" android:id="@+id/addAccount" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="Refresh" android:id="@+id/refresh" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_alignParentBottom="true"		
+		>
+		<LinearLayout
+		    android:orientation="vertical"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    >
+		    <LinearLayout
+			    android:orientation="horizontal"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    style="@style/highStyle"
+			    >
+			    <TextView android:text="High: " android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			    <TextView android:id="@+id/high" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		    </LinearLayout>
+   		    <LinearLayout
+			    android:orientation="horizontal"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    >
+			    <TextView android:text="Low: " android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			    <TextView android:id="@+id/low" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		    </LinearLayout>
+	    </LinearLayout>
+	</LinearLayout>
+</RelativeLayout>
