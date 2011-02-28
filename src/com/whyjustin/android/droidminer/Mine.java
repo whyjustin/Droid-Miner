@@ -86,6 +86,7 @@ public class Mine extends Activity implements OnClickListener, OnFocusChangeList
 		switch (view.getId()) {
     		case R.id.addAccount:
     			addAccount();
+    			break;
     		case R.id.refresh:
     			refreshAccounts();
     			break;
@@ -110,7 +111,7 @@ public class Mine extends Activity implements OnClickListener, OnFocusChangeList
     }
     
     @Override
-    public boolean onContextItemSelected(MenuItem item) {
+	public boolean onContextItemSelected(MenuItem item) {
 		AdapterContextMenuInfo info = (AdapterContextMenuInfo)item.getMenuInfo();
 		View view = info.targetView;
 		switch (view.getId()) {
@@ -119,9 +120,9 @@ public class Mine extends Activity implements OnClickListener, OnFocusChangeList
 				break;
 		}  
 		return true;
-    }
-    
-    private void handleAddressItemSelected(MenuItem item, AdapterContextMenuInfo info) {
+	}
+
+	private void handleAddressItemSelected(MenuItem item, AdapterContextMenuInfo info) {
 		switch (item.getItemId()) {
 			case 0:
 				_accounts.remove(info.position);
